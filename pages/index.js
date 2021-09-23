@@ -5,6 +5,7 @@ import useStore from "@components/store/store";
 import Logo from '@components/assets/logo'
 import Layout from '@components/layouts/web'
 import Notification from '@components/Notification'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -51,9 +52,11 @@ export default function Home() {
                               </p>
                               <footer className="grid gap-4 mt-6 sm:grid-flow-col sm:inline-grid">
                                   <a className="inline-flex items-center justify-center px-4 font-semibold tracking-tight transition bg-white rounded-lg shadow font-brand focus:bg-teal-50 text-teal-500 h-11 hover:text-teal-400 focus:text-teal-600 focus:outline-none"
-                                     href="https://razorui.com/pricing">Latest episode</a>
-                                  <a className="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-white transition rounded-lg font-brand bg-white/10 h-11 hover:bg-white/20 focus:bg-white/5 focus:text-teal-200 focus:outline-none"
-                                     href="https://razorui.com/packages">Episodes</a>
+                                     href="#">Latest episode</a>
+                                  <Link href="/episodes">
+                                      <a className="inline-flex items-center justify-center px-4 font-semibold tracking-tight text-white transition rounded-lg font-brand bg-white/10 h-11 hover:bg-white/20 focus:bg-white/5 focus:text-teal-200 focus:outline-none"
+                                         >Episodes</a>
+                                  </Link>
                               </footer>
                           </aside>
                           <aside className="relative hidden sm:block pointer-events-none">
@@ -78,7 +81,7 @@ export default function Home() {
                               <div className="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
                                   <h2 className="font-sans text-3xl sm:text-5xl font-extrabold tracking-tight sm:leading-tight">
                                       why &nbsp;<br className="hidden md:block"/>
-                                      <Logo className="-ml-4 md:-ml-0 h-24 w-auto inline" />
+                                      <Logo className="-ml-4 md:-ml-0 h-16 md:h-24 w-auto inline" />
                                   </h2>
                               </div>
                               <div className="lg:w-1/2">
