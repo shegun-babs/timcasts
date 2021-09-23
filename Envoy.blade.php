@@ -24,7 +24,7 @@
 
     #commit progress
     @if ($message)
-        git commit -m "{{ $message}}"
+        git commit -m "{{ $message }}"
     @else
         git commit -m "{{ 'Regular update on ' . date("d-m-Y H:i:s") }}"
     @endif
