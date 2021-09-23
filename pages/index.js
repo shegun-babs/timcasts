@@ -12,8 +12,7 @@ export default function Home() {
     const episodes = useStore(state => state.recentEpisodes);
 
     console.log(episodes)
-
-
+    
 
   return (
       <>
@@ -69,7 +68,6 @@ export default function Home() {
                       </div>
                   </div>
               </section>
-
 
               <Features />
 
