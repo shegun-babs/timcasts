@@ -21,8 +21,6 @@ export default function Home() {
               <link rel="icon" href="/favicon.ico" />
           </Head>
 
-          <Notification />
-
               <div className="absolute w-full z-0">
                 <Navbar className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8" />
               </div>

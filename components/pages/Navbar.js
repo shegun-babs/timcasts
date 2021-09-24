@@ -36,23 +36,23 @@ export default function Navbar({ className }) {
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                                     <Link href={links.home}>
-                                        <a className="text-teal-200 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                                            home
+                                        <a className="text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
+                                            Home
                                         </a>
                                     </Link>
                                     <Link href={links.episodes}>
-                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                                            episodes
+                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
+                                            Episodes
                                         </a>
                                     </Link>
                                     <Link href={links.about}>
-                                        <a className="border-transparent text-gray-50 hover:text-gray-200 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                                            about
+                                        <a className="border-transparent text-gray-50 hover:text-gray-200 inline-flex items-center px-1 pt-1 font-medium">
+                                            About
                                         </a>
                                     </Link>
                                     <Link href={links.contact}>
-                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                                            contact
+                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
+                                            Contact
                                         </a>
                                     </Link>
                                 </div>
