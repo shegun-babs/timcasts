@@ -6,6 +6,8 @@ import Logo from "@components/assets/logo";
 import Link from 'next/link'
 import useStore from "@components/store/store";
 import Divider from "@components/pages/Divider";
+import { useRouter } from 'next/router';
+import NavLink from './/NavLink'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -21,7 +23,17 @@ function classNames(...classes) {
 
 export default function Navbar({ className }) {
 
-    const isLoggedIn = useStore(state => state.isLoggedIn)
+    const isLoggedIn = useStore(state => state.isLoggedIn);
+
+    const activeLink = (href) => {
+        const router = useRouter();
+        const style = router.asPath === href
+                ? "text-teal-200"
+                : "border-transparent text-gray-50 hover:text-gray-200 inline-flex items-center px-1 pt-1 font-medium";
+        console.log("router href: " +router.asPath)
+        console.log("Passed href: " +href)
+        return style;
+    }
 
     return (
         <Disclosure as="nav" className={className}>
@@ -34,27 +46,10 @@ export default function Navbar({ className }) {
                                     <Logo className="h-10 w-auto text-gray-100" />
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                                    {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                                    <Link href={links.home}>
-                                        <a className="text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
-                                            Home
-                                        </a>
-                                    </Link>
-                                    <Link href={links.episodes}>
-                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
-                                            Episodes
-                                        </a>
-                                    </Link>
-                                    <Link href={links.about}>
-                                        <a className="border-transparent text-gray-50 hover:text-gray-200 inline-flex items-center px-1 pt-1 font-medium">
-                                            About
-                                        </a>
-                                    </Link>
-                                    <Link href={links.contact}>
-                                        <a className="border-transparent text-teal-50 hover:text-teal-200 inline-flex items-center px-1 pt-1 font-medium">
-                                            Contact
-                                        </a>
-                                    </Link>
+                                    <NavLink href={links.home}>Home</NavLink>
+                                    <NavLink href={links.episodes}>Episodes</NavLink>
+                                    <NavLink href={links.about}>About</NavLink>
+                                    <NavLink href={links.contact}>Contact</NavLink>
                                 </div>
                             </div>
                             <div className={`hidden ${!isLoggedIn ? 'sm:hidden' : ''} sm:ml-6 sm:flex sm:items-center`}>

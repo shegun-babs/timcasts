@@ -1,6 +1,6 @@
 
 import Layout from "@components/layouts/web";
-import {Navbar} from "@components/pages";
+import Navbar from "@components/nav/Navbar";
 import { ImPhone, ImLocation } from 'react-icons/im'
 import { MailSolid, LocationMarkerSolid } from '@components/assets/icons'
 import Logo from '@components/assets/logo'

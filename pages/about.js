@@ -1,6 +1,6 @@
 
 import Layout from "@components/layouts/web";
-import {Navbar} from "@components/pages";
+import Navbar from "@components/nav/Navbar";
 import { MicrophoneIcon, DocumentDuplicateIcon, DownloadIcon, ChatAlt2Icon } from "@heroicons/react/outline";
 
 const About = () => {

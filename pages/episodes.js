@@ -1,6 +1,6 @@
 
 import Layout from '@components/layouts/web'
-import { Navbar } from "@components/pages";
+import Navbar from "@components/nav/Navbar";
 import { EpisodeList } from '@components/pages/episode'
 
 

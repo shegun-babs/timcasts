@@ -1,11 +1,12 @@
 
 import Head from 'next/head'
-import { Navbar, MailingList, Hosts, Footer, RecentEpisodes, Features } from '@components/pages'
+import { MailingList, Hosts, Footer, RecentEpisodes, Features } from '@components/pages'
 import useStore from "@components/store/store";
 import Logo from '@components/assets/logo'
 import Layout from '@components/layouts/web'
 import Notification from '@components/Notification'
 import Link from 'next/link'
+import Navbar from "@components/nav/Navbar";
 
 export default function Home() {
 
