@@ -41,8 +41,8 @@ const About = () => {
                     </div>
 
                     <div className="py-20">
-                        <ul className="grid grid-cols-4 py-10 border">
-                            <li className="items-center flex justify-center">
+                        <ul className="grid md:grid-cols-4 divide-y md:divide-y-0 border">
+                            <li className="items-center flex justify-center py-10">
                                 <div className="text-center space-y-2">
                                     <div className="text-5xl font-semibold">300</div>
                                     <div className="uppercase tracking-[0.2em] text-sm text-gray-400 font-medium flex space-x-1 items-center">
@@ -50,7 +50,7 @@ const About = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="items-center flex justify-center">
+                            <li className="items-center flex justify-center py-10">
                                 <div className="text-center space-y-2">
                                     <div className="text-5xl font-semibold">421</div>
                                     <div className="uppercase tracking-[0.2em] text-sm text-gray-400 font-medium flex space-x-1 items-center">
@@ -58,7 +58,7 @@ const About = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="items-center flex justify-center">
+                            <li className="items-center flex justify-center py-10">
                                 <div className="text-center space-y-2">
                                     <div className="text-5xl font-semibold">1800</div>
                                     <div className="uppercase tracking-[0.2em] text-sm text-gray-400 font-medium flex space-x-1 items-center">
@@ -66,7 +66,7 @@ const About = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className="items-center flex justify-center">
+                            <li className="items-center flex justify-center py-10">
                                 <div className="text-center space-y-2">
                                     <div className="text-5xl font-semibold">520</div>
                                     <div className="uppercase tracking-[0.2em] text-sm text-gray-400 font-medium flex space-x-1 items-center">
